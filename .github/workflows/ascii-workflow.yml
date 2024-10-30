@@ -4,7 +4,7 @@ on:
   - push
 
 jobs: 
-    first_job: 
+    eugene_kofi: 
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code

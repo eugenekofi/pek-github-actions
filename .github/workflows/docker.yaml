@@ -4,7 +4,7 @@ on:
   - push
 
 jobs: 
-  docker_buildz: 
+  docker_buildz:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
@@ -32,7 +32,7 @@ jobs:
       run: docker push $CONTAINER_REGISTRY/$DOCKER_USERNAME/$IMAGE_NAME:latest
 
   deploy:
-  needs: docker_buildz:
+  needs: docker_buildz
   runs-on: ubuntu-latest 
   steps:
     - name: Checkout Code

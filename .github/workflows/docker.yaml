@@ -3,7 +3,13 @@ name: Docker Workflow
 on:
   push:
     branches:
-        - feature
+      - feature
+
+    paths: 
+      - css/**
+      - images/**
+      - index.html
+      - dockerfile    
 
 env:
     CONTAINER_REGISTRY: docker.io

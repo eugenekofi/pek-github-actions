@@ -5,7 +5,7 @@ on:
     branches:
       - feature
 
-    paths: 
+    paths-ignore: 
       - css/**
       - images/**
       - index.html

@@ -6,10 +6,10 @@ on:
       - feature
 
     paths-ignore: 
-      - css/**
-      - images/**
-      - index.html
-      - dockerfile    
+      - !css/**
+      - !images/**
+      - !index.html
+      - !dockerfile    
 
 env:
     CONTAINER_REGISTRY: docker.io

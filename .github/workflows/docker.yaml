@@ -1,16 +1,20 @@
 name: Docker Workflow
 
 on:
-  push:
-    branches:
-      - feature
+  # push:
+  #   branches:
+  #     - feature
 
-    paths: 
-      - css/**
-      - images/**
-      - index.html
-      - dockerfile    
-  workflow_dispatch:
+  #   paths: 
+  #     - css/**
+  #     - images/**
+  #     - index.html
+  #     - dockerfile 
+    pull_request:
+      types: # [closed, opened] 
+        - closed
+        - opened  
+   workflow_dispatch:
 env:
     CONTAINER_REGISTRY: docker.io
     IMAGE_NAME: resume-app

@@ -5,12 +5,12 @@ on:
     branches:
       - feature
 
-    paths-ignore: 
+    paths: 
       - css/**
       - images/**
       - index.html
       - dockerfile    
-
+    workflow_dispatch:
 env:
     CONTAINER_REGISTRY: docker.io
     IMAGE_NAME: resume-app

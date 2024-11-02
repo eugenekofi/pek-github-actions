@@ -1,20 +1,10 @@
 name: Docker Workflow
 
 on:
-  # push:
-  #   branches:
-  #     - feature
-
-  #   paths: 
-  #     - css/**
-  #     - images/**
-  #     - index.html
-  #     - dockerfile 
-    pull_request:
-      types: # [closed, opened] 
-        - closed
-        - opened  
-    workflow_dispatch:
+   
+    schedule:
+      - cron: "5 * * * *"
+  
 env:
     CONTAINER_REGISTRY: docker.io
     IMAGE_NAME: resume-app

@@ -1,4 +1,4 @@
-name: Cronjob Workflow
+name: Cron Docker Workflow
 
 on:
   schedule:

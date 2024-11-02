@@ -1,4 +1,3 @@
-
 name: Docker Workflow
 
 on:
@@ -9,6 +8,7 @@ on:
 env:
     CONTAINER_REGISTRY: docker.io
     IMAGE_NAME: resume
+    
 jobs: 
   docker_build:
     runs-on: ubuntu-latest

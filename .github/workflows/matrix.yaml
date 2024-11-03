@@ -27,7 +27,7 @@ jobs:
   if: github.ref == 'refs/heads/main'
   needs: docker
   runs-on: ubuntu-latest 
-  steps:
+    steps:
      - name: Docker Login
        run: docker login --username=${{ vars.DOCKER_USERNAME }} --password=${{secrets.DOCKER_PASSWORD }}
     
